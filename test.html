@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.my.button{
+ background-color:red;
+}
+
+</style>
+
+<!--Ratings-->
+<style>
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+</style>
+
+<body>
+<div class="container">                 
+<ul class="pager">
+<li class="previous"><a href="1.html">Previous</a></li>
+</ul>
+</div>
+
+<div class="main">
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> BOYS </button>
+  <button class="btn" onclick="filterSelection('cars')"> GIRLS </button>
+  <button class="btn" onclick="filterSelection('people')"> REMOTE-CONTROL</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+<div class="column nature">
+<div class="content">
+<img src="D:\website\toys\China-Baby-Kids-Toys-Navvy-Electric-Car-Truck-Bulldozer-Ride-on-Toy.jpg" alt="Mountains" style="width:100%;height:300px;">
+<h2>Toy Crain</h2>
+<h4>PRICE: $12.04 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy</a> </button> </center>
+</div>
+</div>
+
+<div class="column nature">
+<div class="content">
+<img src="D:\website\toys\71NhhDK3ORL._SX425_.jpg" alt="Lights" style="width:100%">
+<h2>Hot Wheel Jeep</h2>
+<h4>PRICE: $18.15</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+
+<div class="column nature">
+<div class="content">
+<img src="D:\website\toys\TB2AjkhXQfb_uJkSmRyXXbWxVXa_!!2201103932.jpg" alt="Nature" style="width:100%">
+<h2> Guitar Set </h2>
+<h4>PRICE: $23.20</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+<br>
+<div class="my">
+<div class="container-fluid">
+<button class="btn btn-lg btn-block" href="#" id="p">MORE</button>
+</div>
+</div> 
+</div>
+<br>
+
+<div id="q">
+<div class="row">
+<div class="column nature">
+    <div class="content">
+      <img src="D:\website\images\product-image-788509900_800x.jpg" alt="Mountains" style="width:100%;height:300px;">
+      <h2>Racing Bike</h2>
+      <h4>PRICE: $28.04 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;">Buy</button></center>
+</div>
+</div>
+<div class="column nature">
+<div class="content">
+<img src="D:\website\images\112-24G-Remote-Control-High-Speed-Off-Road-Truck-Vehicle-Toy-RC-Rock-Crawler-Buggy-Climbing-Car-for-PICKCAR-D90-Kid-Boy-Toys-Cheaper-price-MDb5-yxn0.jpg" alt="Lights" style="width:100%">
+<h2>Trucks</h2>
+<h4>PRICE: $28.50</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column nature">
+<div class="content">
+<img src="D:\website\images\118-Scale-Yamaha-Motorcycle-Model-YZRM1-46-Laguna-Seca-2005-Kids-Racing-Bike-Collection-Diecast-Toys-XOXL2297-tkw0.jpg" alt="Nature" style="width:100%">
+<h2>Yamaha Bike</h2>
+<h4>PRICE: $28.20</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="r">
+<div class="row">
+<div class="column nature">
+    <div class="content">
+      <img src="D:\website\toys\dhr08_77_pontiac_firebird.jpg" alt="Mountains" style="width:100%;height:300px;">
+      <h2>Hot Wheel</h2>
+      <h4>PRICE: $22.04 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column nature">
+<div class="content">
+<img src="D:\website\toys\51+eDFLHn4L.jpg" alt="Lights" style="width:100%">
+<h2>Mini Jeep</h2>
+<h4>PRICE: $58.15</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column nature">
+<div class="content">
+<img src="D:\website\toys\maxresdefault.jpg" alt="Nature" style="width:100%; height:320px;">
+<h2>Audi Car</h2>
+<h4>PRICE: $83.20</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="s">
+<div class="row">
+<div class="column nature">
+<div class="content">
+<img src="D:\website\images\5a40c258Nda539720.jpg" alt="Mountains" style="width:100%;">
+<h2>Speed King</h2>
+<h4>PRICE: $12.04 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column nature">
+<div class="content">
+<img src="D:\website\images\19e8a686723a7e83fb23dc533ccc480c.jpg" alt="Lights" style="width:100%; height:320px;">
+<h2>Tractor</h2>
+<h4>PRICE: $28.15</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column nature">
+<div class="content">
+<img src="D:\website\images\Vantage-Handmade-Iron-Motorcycle-Model-Metal-Art-Motor-Ornaments-Antique-Motorbike-Model-Home-Office-Bar-Crafts.jpg_640x640.webp" alt="Nature" style="width:100%; height:320px;">
+<h2> Metal Bike </h2>
+<h4>PRICE: $83.20</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="t">
+<div class="row">
+<div class="column nature">
+    <div class="content">
+      <img src="D:\website\images\Enlighten-Models-Building-toy-Compatible-with-Lego-E1110-185pcs-SWAT-SUV-Blocks-Toys-Hobbies-For-Boys.webp" alt="Mountains" style="width:100%;height:300px;">
+      <h2>SWAT</h2>
+      <h4>PRICE: $42.04 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column nature">
+<div class="content">
+<img src="D:\website\images\6129k0NJFHL._SY355_.jpg" alt="Lights" style="width:100%">
+<h2>Hot Wheel Bike</h2>
+<h4>PRICE: $38.15</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column nature">
+<div class="content">
+<img src="D:\website\toys\car01.jpg" alt="Nature" style="width:100%; height:310px;">
+<h2>Hot Wheel Car </h2>
+<h4>PRICE: $43.20</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- Girls toys-->
+
+<div class="row">
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\Barbie_Guzellik_Makyaji___________Barbie-oyunu_com.jpg" alt="Car" style="width:100%;height:300px;">
+<h2>Barbie Kit</h2>
+<h4>PRICE: $10.70</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\50cm-Soft-Plush-Toys-Flower-Fairy-Cute-Doll-Baby-Girl-Room-Decoration-Birthday-Gift-For-Daughter.jpg_640x640.webp" alt="Car" style="width:100%">
+<h2>Dolls Pair</h2>
+<h4>PRICE: $12.00</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\82x30x-H-100cm-E1-MDF-Easy-Assembly.jpg_350x350.jpg" alt="Car" style="width:100%">
+<h2>Barbie Kitchen Set</h2>
+<h4>PRICE: $13.40</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+<br>
+<div class="my">
+<div class="container-fluid">
+<button class="btn btn-lg btn-block" href="#" id="b">MORE</button>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="a">
+<div class="row">
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\61dSEA8KepL._UY395_.jpg" alt="Mountains" style="width:100%;height:350px;">
+<h2>Wrist Band</h2>
+<h4>PRICE: $10.04 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\61V6jjgNCNL._SX466_.jpg" alt="Lights" style="width:100%;height:350px;">
+<h2>Barbie MakeUp-Set</h2>
+<h4>PRICE: $15.15</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\9f3df04d-3a3a-42c0-b9bf-4a05476dfb11_1.688a17115d006d117ec769ea14cb170c.jpeg" alt="Mountains" style="width:100%;height:350px;">
+<h2> Barbie Garden </h2>
+<h4>PRICE: $70.27</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"><a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="f">
+<div class="row">
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\disney-princess-carriage-dynacraft.jpg" alt="Mountains" style="width:100%;height:350px;">
+<h2>Barbie Cart</h2>
+<h4>PRICE: $36.04 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\Leaptop-best-toy-for-4-year-old-girls-459x500.jpg" alt="Lights" style="width:100%">
+<h2>Mini Gamiing Laptop</h2>
+<h4>PRICE: $88.15</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\s-l640.jpg" alt="Nature" style="width:100%;height:350px;">
+<h2> Barbie Mini House </h2>
+<h4>PRICE: $73.20</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="c">
+<div class="row">
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\FLOLA-Clearance-Vintage-Wide-Black-Bracelets-Unique-Expandable-Cuff-Bracelets-Black-Bracelets-for-Women-with-Rhinestones.jpg" alt="Mountains" style="width:100%;height:400px;">
+<h2>Wrist Band</h2>
+<h4>PRICE: $15.04 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\beauty-1265334_640.jpg" alt="Lights" style="width:100%; height:400px;">
+<h2>Doll Set</h2>
+<h4>PRICE: $58.15</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\71y1lIGXbUL._SX425_.jpg" alt="Nature" style="width:100%">
+<h2>Barbie MakeUp Set </h2>
+<h4>PRICE: $53.20</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="d">
+<div class="row">
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\barbie-doll-kids-toys-500x500.jpg" alt="Mountains" style="width:100%;height:300px;">
+<h2>Barbie Doll Set</h2>
+<h4>PRICE: $59.04 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"><a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\457154951-1.jpg" alt="Lights" style="width:100%">
+<h2>Doll</h2>
+<h4>PRICE: $18.15</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\Princess-Anna-Elsa-Dolls-For-Girls-Toys-Princess-Anna-Elsa-Dolls-For-Girls-Toys-18cm.jpg" alt="Nature" style="width:100%">
+<h2> Toy Princess</h2>
+<h4>PRICE: $73.20</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="e">
+<div class="row">
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\toys-kingdom-girls-dress-up-dressing-table-with-lights-and-sounds.jpg" alt="Mountains" style="width:100%;height:300px;">
+<h2>Dressing Table</h2>
+<h4>PRICE: $62.44 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\-font-b-Girls-b-font-font-b-Toys-b-font-Pink-Plastic-Children-Make-Up.jpg" alt="Lights" style="width:100%">
+<h2>Spa Set</h2>
+<h4>PRICE: $38.15</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"><a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column cars">
+<div class="content">
+<img src="D:\website\toys\71iRzi4rx3L._SX466_.jpg" alt="Nature" style="width:100%">
+<h2> Mobile Set </h2>
+<h4>PRICE: $43.20</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Cars -->
+
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\AMARM0517US-1-3QHX.jpg" alt="Car" style="width:100%">
+<h2>Hot Wheel Car</h2>
+<h4>PRICE: $28.59</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+  
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\big-and-mean-rock-crawling-1-20-scale-modified-off-road-hummer-original-imaeujsgdp2cf5rb.jpeg" alt="Car" style="width:100%;height:300px;">
+<h2>Monstor Car</h2>
+<h4>PRICE: $48.59</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\f7a0c33f-a041-47e5-96fd-c5a1d3fc22c7_1.73455e1e092808ce0e34d74af167a9e4.jpeg" alt="Car" style="width:100%">
+<h2>Racing Car</h2>
+<h4>PRICE: $45.50</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+<br>
+<div class="my">
+<div class="container-fluid">
+<button class="btn btn-lg btn-block" href="#" id="12">MORE</button>
+</div>  
+</div>
+</div>
+
+
+
+
+<div id="m">
+<div class="row">
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\1-18-rechargeable-rock-crawler-4wd-2-4-ghz-4x4-rally-car-rc-original-imaf93ug22qhhwqu.jpeg" alt="Mountains" style="width:100%;height:300px;">
+<h2>Rechargable Jeep</h2>
+<h4>PRICE: $102.04 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>  
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\51M5ZnTrQDL.jpg" alt="Mountains" style="width:100%;height:300px;">
+<h2>Remote Robot</h2>
+<h4>PRICE: $108.15</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\51S9zUle2fL.jpg" alt="Mountains" style="width:100%;height:300px;">	
+<h2> Remote Jet </h2>
+<h4>PRICE: $123.20</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="n">
+<div class="row">
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\61Rwexd0pJL._SX425_.jpg" alt="Mountains" style="width:100%;height:300px;">	
+<h2>RoboCar</h2>
+<h4>PRICE: $97.04 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\Technic-RC-Toys-Series-The-Military-SUV-Car-Set-Building-Blocks-Bricks-Remote-Control-Car-Boys-Toys-Christmas-Gifts-YFFD10982-ghq0.jpg" alt="Mountains" style="width:100%;height:300px;">
+<h2>Military Voice Jeep</h2>
+<h4>PRICE: $228.15</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\AMARM0517US-1-3QHX.jpg" alt="Nature" style="width:100%">
+<h2> Desert Rider </h2>
+<h4>PRICE: $183.20</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="o">
+<div class="row">
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\big-and-mean-rock-crawling-1-20-scale-modified-off-road-hummer-original-imaeujsgdp2cf5rb.jpeg" alt="Mountains" style="width:100%;height:300px;">
+<h2>Remote Jeep</h2>
+<h4>PRICE: $152.04 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\dragon-4-channel-rc-hobby-grade-helicopter-31.png" alt="Lights" style="width:100%;height:300px;">
+<h2>Dragon Helicopter</h2>
+<h4>PRICE: $148.15</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\f7a0c33f-a041-47e5-96fd-c5a1d3fc22c7_1.73455e1e092808ce0e34d74af167a9e4.jpeg" alt="Nature" style="width:100%">
+<h2> Racer Car </h2>
+<h4>PRICE: $153.20</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="13">
+<div class="row">
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\GizmoVine-RC-Car-JJRC-Q60-Remote-Control-Toys-116-24G-radiocontrolled-6wd-Tracked-OffRoad-Military-Truck-Car-Toys-for-Boys-QHZP49234-ryt0.jpg" alt="Mountains" style="width:100%;height:300px;">
+<h2>Electric Truck</h2>
+<h4>PRICE: $142.04 </h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>  
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\HTB1Y.d4OFXXXXadapXXq6xXFXXXM.jpg" alt="Lights" style="width:100%">
+<h2>Electric Rider </h2>
+<h4>PRICE: $178.15</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+<div class="column people">
+<div class="content">
+<img src="D:\website\toys\item_XL_35790400_139268675.jpg" alt="Nature" style="width:100%">
+<h2> Racer Fuel </h2>
+<h4>PRICE: $233.20</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<br>
+<center><button style="width:100%; height:50px; background-color:#99ffff;"> <a href="D:\website\pay12.html" style="text-decoration:none;"> Buy </a> </button></center>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script>
+$("#q").hide();
+$("#r").hide();
+$("#s").hide();
+$("#t").hide();
+$("#p").click(function(){ 
+$("#p").hide();
+$("#q").show();
+$("#r").show();
+$("#s").show();
+$("#t").show();
+});
+</script>
+
+<script>
+$("#a").hide();
+$("#f").hide();
+$("#c").hide();
+$("#d").hide();
+$("#e").hide();
+$("#b").click(function(){ 
+$("#b").hide();
+$("#a").show();
+$("#f").show();
+$("#c").show();
+$("#d").show();
+$("#e").show();
+});
+</script>
+
+<script>
+$("#m").hide();
+$("#n").hide();
+$("#o").hide();
+$("#13").hide();
+$("#12").click(function(){ 
+$("#12").hide();
+$("#m").show();
+$("#n").show();
+$("#o").show();
+$("#13").show();
+});
+</script>
+
+
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
