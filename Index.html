@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+  color: orange;
+}
+</style>
+
+<!--SIDE-NAVBAR-->
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+
+
+<!--IMAGE FLIPPER-->
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+
+
+<!--image fliper-->
+<style>
+.container {
+  position: relative;
+  width: auto;
+}
+
+.image {
+  display: block;
+ }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffb3b3;
+  overflow: hidden;
+  width: 400px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+<!-- rounded images-->
+<style>
+#a {
+  border-radius: 180%;
+}
+</style>
+
+<!-- ratings -->
+
+<style>
+*{
+box-sizing: border-box;
+ }
+ 
+.fa{
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+</style>
+
+
+
+
+</head>
+
+<body style="background-color:black">
+<div class="jumbotron jumbotron-text">
+<center> <h1><span class="glyphicon glyphicon-fire" style="color:red;"></span> wolfkart</h1> </center>	
+</div>	
+
+<!--NAVBAR-->   
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-header">	
+<a class="navbar-brand" href="#">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="D:\website\login.html">Log In</a>
+  <a href="D:\website\form.html">Sign Up</a>
+  <a href="D:\website\feedback.html">Feedback</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+ &nbsp; &nbsp; &nbsp; &nbsp; <b class="fas fa-home"></b> &nbsp;<b><a href="I:\website\1.html">Home</a></b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+</div>
+
+<ul class="nav navbar-nav">
+
+<li>
+<a href="D:\website\ac.html">
+<b class="fas fa-bolt"></b> ELECTRONICS &nbsp; &nbsp; &nbsp; &nbsp;	
+</a>
+</li>
+
+<li class="dropdown"> 
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"> <b class="fas fa-mobile-alt"></b>&nbsp;MOBILES &nbsp; &nbsp; &nbsp; &nbsp; </a> 
+<ul class="dropdown-menu">
+<br>
+<li><a href="D:\website\mobiles\apple.html">Apple</a></li>
+<br>
+<li><a href="D:\website\mobiles\realme.html">Realme</a></li>
+<br>
+<li><a href="D:\website\mobiles\mi.html">MI</a></li>	
+<br>
+</ul>
+</li>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+
+<li>
+<a href="D:\website\speaker.html">
+&nbsp; &nbsp; &nbsp; <b class="fas fa-headphones"></b>&nbsp;MOBILES-ACCESSORIES &nbsp; &nbsp; &nbsp; &nbsp; </a>
+</a></li>
+<!--
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"> &nbsp; &nbsp; &nbsp; <b class="fas fa-headphones"></b>&nbsp;MOBILES-ACCESSORIES &nbsp; &nbsp; &nbsp; &nbsp; </a>
+<ul class="dropdown-menu">
+<br>
+<li><a href="#">Speaker</a></li>
+<br>
+<li><a href="#">Headphone</a></li>
+<br>
+<li><a href="#">Charger</a></li>
+</ul>
+</li>
+-->
+<li class="dropdown"> 
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"> <b class="fas fa-tshirt"></b>&nbsp;CLOTHING & SUITING &nbsp; &nbsp; &nbsp; &nbsp; </a>
+<ul class="dropdown-menu">
+	<br>
+<li> <a href="D:\website\men.html"> MEN </a> </li>
+<br>
+<li> <a href="D:\website\women.html">WOMEN</a> </li>
+<br>
+</ul>
+</li>
+
+
+<form class="navbar-form navbar-left">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+</form>
+
+</div>
+</nav>
+
+<br>
+<br>
+
+<!-- carousel-->
+<div id="a" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="a" data-slide-to="0" class="active"></li>	
+<li data-target="a" data-slide-to="1"> </li>
+<li data-target="a" data-slide-to="2"> </li>
+<li data-target="a" data-slide-to="3"> </li>
+</ol>
+‪
+<div class="carousel-inner">
+<div class="item active"> <img src="D:\website\images\Inkedamazon-blog-shopping-coupon-offers_LI.jpg" style="width:100%;height:430px;"> </div>
+<div class="item"> <img src="D:\website\mobiles\mi\991540a3-b54f-41f6-a462-bd7d48028792.jpg" style="width:100%;height:430px;"> </div>
+<div class="item"> <img src="D:\website\images\tall_her0_hh_1500x600._CB469526052_.jpg" style="width:100%;height:430px;"> </div>	
+<div class="item"> <img src="D:\website\images\1553085337276.jpg" style="width:100%;height:430px;"> </div>
+
+<a class="left carousel-control" href="#a" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+<a class="right carousel-control" href="#a" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+</div>
+</div>
+
+
+<br>
+<br>
+<a href="#"> <img src="D:\website\images\Home-Products._CB454409463_.jpg" style="height:300px;width:100%;"/> </a>
+<h1 style="background-color:yellow; text-align: center; color:red; font-style:italic; font-size:100px;">Women's Dresses Sale</h1>
+<div class="row">
+<div class="col-lg-6">
+<a href="women.html"> <img src="D:\website\images\Jaipur-Kurti.jpg" style="height:450px;"/> </a>
+</div>
+<div class="col-lg-6">
+<a href="women.html"> <img src="D:\website\images\buy-1-get-1-free-on-womens-winterwear-extra-25-off-on-online-payments-at-yepme.jpg" style="height:450px;width:100%;"/> </a>
+</div>
+</div>
+
+
+<br>
+<h1 style="background-color:white; text-align:center; font-style:italic; font-size:100px;"><b class="fas fa-mobile">&nbsp; &nbsp;</b>I-Phone Fest</h1>
+
+
+<div class="row">
+<div class="col-md-3">
+<div class="container">
+<img src="D:\website\iphone\1.jpg" style="height:500px;width:380px;"> </a>  
+<div class="overlay">
+<div class="text"> 
+<b>I-PHONE 6S</b>
+<p>PRICE:$499</p>
+<br>
+
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col-md-3">
+<div class="container">
+<img src="D:\website\iphone\Strategy-Analytics-iPhone-X-was-the-worlds-best-selling-phone-in-Q1.jpg" style="height:500px;width:380px;">
+<div class="overlay">
+<div class="text"> 
+<b>I-PHONE X</b>
+<p>PRICE:$899</p>
+<br>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="col-md-3">
+<div class="container">
+<img src="D:\website\iphone\se-fb1.jpg" style="height:500px;width:380px;">
+<div class="overlay">
+<div class="text"> 
+<b>I-PHONE 8S</b>
+<p>PRICE:$499</p>
+<br>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="col-md-3">
+<div class="container">
+<img src="D:\website\iphone\apple-iphone-5s-16gb-space-grey-.jpg" style="height:500px;width:100%;">
+<div class="overlay">
+<div class="text"> 
+<b>I-PHONE 6S PLUS</b>
+<p>PRICE:$499</p>
+<br>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--
+
+<div class="col-sm-2">
+<div class="container">
+<img src="D:\website\iphone\97744-v1-apple-iphone-7-mobile-phone-large-1.jpg" style="height:380px;width:130%;">
+<div class="overlay">
+<div class="text"> 
+<b>I-PHONE X</b>
+<p>PRICE:$499</p>
+<br>
+<button type="button" class="btn btn-danger" align="center" href="#"> MORE</button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="col-sm-2">
+<div class="container">
+<img src="D:\website\iphone\apple-iphone-6-16gb-500x500.gif" style="height:380px;width:125%;">
+<div class="overlay">
+<div class="text"> 
+<b>I-PHONE X</b>
+<p>PRICE:$499</p>
+<p></p>
+<br>
+<button type="button" class="btn btn-danger" align="center" href="#"> MORE</button>
+</div>
+</div>
+</div>
+</div>
+ 
+</div>	
+-->
+<br>
+<br>
+<br>
+
+
+<br>
+
+<div class="row">
+
+<div class="col-md-4">
+<a href="D:\website\test.html" style="text-decoration: none;">
+<img src="D:\website\images\51ktgJFyHHL._SX466_.jpg" id="a" style="width:300px" alt="">
+<br>
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;Kids Product</h1>
+</a>
+</div>	
+
+
+<div class="col-md-4">
+<a href="D:\website\prac.html" style="text-decoration: none;">
+<img src="D:\website\images\crockery-items-porcelain-crockery-items.jpg" id="a" style="width:300px" alt="">
+<br>
+<h1>&nbsp;&nbsp;&nbsp;Kitchen Product</h1>
+</a>
+</div>	
+
+<div class="col-md-4">
+<a href="D:\website\toys.html" style="text-decoration: none;">	
+<img src="D:\website\images\81b+c35dv1L._SL1500_.jpg" id="a" style="width:300px;height:300px;" alt="">
+<br>
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CHINESE </h1>
+</a>
+</div>	
+</div>
+
+<br>
+<br>
+
+
+<div data-role="footer" data-position="fixed" style="background-color:white; color:black;" >
+<h1 align="center"><span style="color:red;" class="glyphicon glyphicon-fire"></span>Wolfkart</h1>
+<table>
+<tr> <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+<td> <h3>Registraor Office Address</h3><p> Wolfkart Internet Private Limited<br>Bengaluru - 560034<br>India<br>CIN : U51109KA2012PTC066107<br>Telephone: 1800 208 9898<br></p> </td>
+
+<td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+<td> <h3> Let Us Help You</h3> <p>Your Account <br> Returns Centre <br> 100% Purchase Protection <br> App Download</p> </td>
+
+<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+<td> <h3> Make Money with Us </h3>  <p> Sell on Wolfkart <br> Become an Affiliate <br> Advertise Your Products <br> Pay on Merchants <br> Pay on Delivery </p> </td>
+
+<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td> 
+<td> <h3>Head Branch</h3> <p>Armstrong Hostel <br> Chitkara University <br> Chandigarh-Patiala National Highway <br> Punjab 140 401 <br> Phone : +91 8288088578</p> </td> 
+
+<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td> </tr>	
+</table>
+
+</div>
+
+</body>
+</html>
